@@ -1,7 +1,7 @@
 const weatherContainer = () => {
-  document.querySelector('#main').innerHTML = '';
+  // document.querySelector('#main').innerHTML = '';
   document.querySelector('#main').innerHTML = `
-  <div class="actualWeatherContainer d-flex justify-content-center mb-5"></div>
+  <div class="weather-container d-flex justify-content-center mb-5"></div>
     <form class="container" id="weatherContainer">
       <div class="form-group">
         <h1>Do you need a jacket?</h1>
