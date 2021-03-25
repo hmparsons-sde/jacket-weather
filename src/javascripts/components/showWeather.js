@@ -1,5 +1,5 @@
 const showWeather = (weatherObject) => {
-  document.querySelector('.weather-container').innerHTML += `
+  document.querySelector('.actualWeatherContainer').innerHTML += `
   <div class="card" style="width: 18rem;">
     <img class="card-img-top" src="http://openweathermap.org/img/wn/${weatherObject.weather[0].icon}@2x.png" alt="Card image cap">
     <div class="card-body text-dark">
