@@ -3,10 +3,11 @@ import getWeather from '../helpers/data/getWeather';
 
 const domEvents = () => {
   document.querySelector('body').addEventListener('click', (e) => {
-    if (e.target.id.includes('searchWeather')) {
+    if (e.target.id.includes('search-weather')) {
       e.preventDefault();
-      const city = document.querySelector('#location').value;
-      getWeather(city).then((weatherObject) => showWeather(weatherObject));
+      const loc = document.querySelector('#location').value;
+      getWeather(loc).then((weatherObject) => showWeather(weatherObject));
+      document.querySelector('form').reset();
     }
   });
 };
