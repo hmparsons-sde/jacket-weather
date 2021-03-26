@@ -1,15 +1,12 @@
-const weatherContainer = () => {
-  document.querySelector('#main').innerHTML = '';
-  document.querySelector('#main').innerHTML = `
-  <div class="actualWeatherContainer d-flex justify-content-center mb-5"></div>
-    <form class="container" id="weatherContainer">
-      <div class="form-group">
-        <h1>Watch The Weather</h1>
-        <label for="artist"></label>
-        <input type="text" class="form-control" id="location" aria-describedby="location" placeholder="Zip Code, City, etc" required>
-      </div>
-      <button type="submit" class="btn btn-success btn-lg" id="searchWeather">Submit</button>
-    </form>`;
+const searchForm = () => {
+  document.querySelector('#search-box').innerHTML = `
+  <form id="get-weather" class="shadow p-3 rounded">
+  <div class="form-group">
+    <h2 for="search" id="search-title">Get the Weather</h2>
+    <input type="text" class="form-control" id="location" aria-describedby="location" placeholder="zip code, city, etc.">
+  </div>
+  <button type="submit" id="search-weather" class="btn btn-outline-dark">Submit</button>
+</form>`;
 };
 
-export default weatherContainer;
+export default searchForm;

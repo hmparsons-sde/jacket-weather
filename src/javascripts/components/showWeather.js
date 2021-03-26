@@ -1,10 +1,11 @@
 const showWeather = (weatherObject) => {
-  document.querySelector('.actualWeatherContainer').innerHTML += `
-  <div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="http://openweathermap.org/img/wn/${weatherObject.weather[0].icon}@2x.png" alt="Card image cap">
-    <div class="card-body text-dark">
-    <h5 class="card-title text-dark">${weatherObject.name}</h5>
-    <p class="card-text text-dark">${Math.floor((((weatherObject.main.temp) - 273.15) * 9) / 5 + 32)} Degrees | ${weatherObject.weather[0].main}</p>
+  document.querySelector('#weather-cards').innerHTML += `
+  <div class="card" style="width: 10rem; height:20rem;">
+  <img src="http://openweathermap.org/img/wn/${weatherObject.weather[0].icon}@2x.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">${weatherObject.name}</h5>
+    <p class="card-text">${weatherObject.main.temp} | ${weatherObject.weather[0].description}</p>
+    <p class="card-text"></p>
   </div>
 </div>`;
 };
