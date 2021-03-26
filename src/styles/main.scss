@@ -1,7 +1,14 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 body {
-  margin-top: 100px;
+  margin-top: 150px;
+  background-color: lavender;
+  font-family: 'Lato', sans-serif;
+  color: rgb(83, 77, 77);
+}
+
+form {
+  width: 55%;
 }
